@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FORMULAIRE</title>
+ <link rel="stylesheet" href="formulaire inscription.css">
+ <link rel="stylesheet" href="Roboto.htm" >
 </head>
 <body>
-   <h1 class="text-center"> INSCRIS TOI </h1>
-   <h2> pour Louper AUCUNE NEWS </h2>
-   <label for="idf">votre identifiant <br>
+  <header>
+    <div class="header-div">
+      <h1> INSCRIS TOI </h1>
+      <img src="Logo_Trailer-Games.png" 
+      alt="log1" height="100" id="log1">
+    </div>
+    
+    <h2> pour Louper AUCUNE NEWS </h2>
+    
+    </header>
+      <main>
+    <label for="idf">votre identifiant <br>
       <input type="text" placeholder="identifiant" id="idf" name="idf" required><br>
    </label>
    <label for="passe">votre Mot de passe <br>
@@ -21,5 +32,15 @@
   <label for="mail">votre mail <br>
     <input type="email" placeholder="a@a.fr" id="mail" name="mail" required><br>
   </label>
+  <label for="date">votre date d'arrivée <br>
+    <input type="date" id="date" name="date" min="2023-03-07" required><br>
+  </label>
+  <h3>je m'inscris</h3>
+  <label for="choix">En vous inscrivant,vous acceptez nos conditions générales d'utilisation <br>
+    <label for="cga"><input type="radio" name="cga" id="oui" required>j'accepte</label>
+    <label for="cga"><input type="radio" name="cga" id="non" >j'accepte pas</label>
+ </label>
+ <br>
+</main>
 </body>
 </html>
