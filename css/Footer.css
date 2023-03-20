@@ -2,6 +2,7 @@
     font-family: 'Quicksand';
     src: url('/Quicksand-Bold.ttf');
     src: url('/Quicksand-VariableFont_wght.ttf');
+<<<<<<< HEAD
 }
 
 h1{color: rgb(15, 131, 239);
@@ -88,3 +89,21 @@ h2{display: flex;
 text-align: 
 };
 
+=======
+}
+footer { 
+    font-family: 'Quicksand';
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    background-image: url(../img/fond_du_site.PNG) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+>>>>>>> f5824d4c58fb7138a84ba762409a597de9504f31
