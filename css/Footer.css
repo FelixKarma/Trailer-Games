@@ -1,43 +1,20 @@
-.text-center{
-    text-align: center;
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/Quicksand-Bold.ttf');
+    src: url('/Quicksand-VariableFont_wght.ttf');
+}
+footer { 
+    font-family: 'Quicksand';
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+    background-image: url(../img/fond_du_site.PNG) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
 }
 
-.items-center{
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.bg-grey{
-    background-color: #dddddd;
-}
-
-.border-spacing{
-  border-spacing: 0px;
-}
-
-.centrer {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: justify;
-}
-
-table{
-  border: 2px solid black;
-}
-
-th, td{
-  border: 1px solid #dddddd;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-a{
-    color: black;
-    text-decoration:none;
-}
-
-li {
-  display: block;
-}
