@@ -4,6 +4,7 @@
     src: url('/Quicksand-VariableFont_wght.ttf');
 }
 footer { 
+    
     font-family: 'Quicksand';
     color: white;
     display: flex;

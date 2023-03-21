@@ -1,6 +1,6 @@
  @font-face {
     font-family: 'Wicked steam';
-    src: url('/police/Wicked Steam.ttf');
+    src: url('../police/Wicked Steam.ttf');
     ;
 }
 header { 
