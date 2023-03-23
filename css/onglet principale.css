@@ -7,8 +7,8 @@ body{box-sizing: border-box}
   background-color: #ffffff;
   width: 19%;
   height: 1500px;
-  background-position-y: 100%;
-  background-position-x: 60%;
+  background-position-y: 0%;
+  background-position-x: 0%;
 }
 
 
@@ -28,7 +28,7 @@ body{box-sizing: border-box}
 
 .tab button:hover {
   background-color: #606060;
-  background-position-x: ;
+  background-position-x: 0%
 }
 
 
@@ -42,3 +42,4 @@ body{box-sizing: border-box}
     display: flex;
 
     justify-content: space-between;
+}
