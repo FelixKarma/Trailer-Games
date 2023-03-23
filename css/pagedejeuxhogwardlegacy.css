@@ -4,7 +4,7 @@
       /* Reste du CSS... */
     }
 body{ 
-  background-image: url("../img/fond_du_site.PNG");
+  background-image: url("../image/Fonddusite.png");
        background-repeat: no-repeat;
        background-size:cover;
        background-size: 101%;
@@ -23,7 +23,7 @@ body{
       justify-content: flex-start;
       align-items: center;
     
-      background-image: url(../img/fond_du_site.PNG);
+      background-image: url("../image/Fonddusite.png");
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment:fixed;
