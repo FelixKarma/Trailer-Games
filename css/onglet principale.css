@@ -2,6 +2,7 @@ body{box-sizing: border-box}
 
 
 .tab {
+  
   float: left;
   border: 15px solid #ffffff;
   background-color: #ffffff;
@@ -28,7 +29,7 @@ body{box-sizing: border-box}
 
 .tab button:hover {
   background-color: #606060;
-  background-position-x: 0%
+  
 }
 
 
