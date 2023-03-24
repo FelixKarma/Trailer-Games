@@ -1,4 +1,4 @@
- @font-face {
+@font-face {
     font-family: 'Wicked steam';
     src: url('../police/Wicked Steam.ttf');
     ;
@@ -150,4 +150,123 @@ header {
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
- 
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('/Quicksand-Bold.ttf');
+    src: url('/Quicksand-VariableFont_wght.ttf');
+
+}
+
+h1{color: rgb(15, 131, 239);
+    display: flex;
+    justify-content: center
+;}
+
+body{background-color: grey;
+    background-size: 150%;
+}
+
+.logo{display: flex;
+margin-left: right;
+position: absolute;
+}
+
+
+body {display: flex;
+flex-direction: column;
+background-image: image-set(src="../img/fond du site.PNG" alt="connard");
+background-image: url("../img/fond\ du\ site.PNG");
+background-repeat: no-repeat;
+background-size: cover
+ };
+
+
+ul{color: azure;}
+
+header{background-color: rgb(0, 0, 0);
+    background-attachment: fixed;
+    border-radius: px;
+}
+
+body{box-sizing: border-box}
+
+
+.tab {
+  float: left;
+  border: 15px solid #ffffff;
+  background-color: #ffffff;
+  width: 19%;
+  height: 1800px;
+  background-position-y: 100%;
+  background-position-x: 60%;
+}
+
+
+.tab button  {
+  display: block;
+  background-color: inherit;
+  color: rgb(6, 5, 5);
+  padding: 55px 55px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.tab button:hover {
+  background-color: #606060;
+
+}
+
+
+.tab button.active {
+  background-color: #8a8a8a;
+}
+
+
+
+.insta{
+    display: flex;
+
+    justify-content: space-between;
+
+
+}
+
+
+h2{display: flex;
+text-align: center
+}
+
+footer { 
+
+    font-family: 'Quicksand';
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-image: url(../img/fond_du_site.PNG) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+
+
+
+main{ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+   
+}
+.page-item{
+  
+}
