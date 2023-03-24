@@ -9,38 +9,123 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/header bouton.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    
+    <script src="../js/connectionpopup.js" async></script>
+    <script src="../js/inscrptionpopup.js" async></script>
 </head>
 <body>
 
-   <header>
-    <nav class="navbar fixed-top bg-black" >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../img/Logo_Trailer-Games.png" alt=""  height="180" class="d-inline-block align-text-top">
-       </a>
-  
-        <div class="position-absolute top-50 end-0  translate-middle "> 
-        
-          <button > 
-            <a href="http://www.google.fr/"></a>     
-         connexion
-        </button> 
-         <button>
-            inscription
-         </button> <br><br><br><br><br>
-        <label class="switch position-absolute top-50 end-50 "  >
-          <input type="checkbox" checked>
-          <span class="slider round"></span><br>
-          <img src="../img/lune-removebg-preview.png" alt="lune" width="37" class="position-absolute start-0 top-50 translate-middle ">
-          <img src="../img/solei-removebg-preview.png" alt="soleil" width="40" class="position-absolute  start-100 top-50 translate-middle " >
-        </label></div>
-         </div>
+  <header>
+    <nav class="navbar flex-grow-1 bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../img/Logo_Trailer-Games.png" alt="" height="180" class="d-inline-block align-text-top">
+</a>
 
-        <div class="position-absolute top-50 start-50 translate-middle" ><h1 style="font-size:100px  ; ; color:  rgb(61, 106, 255) ; "  >Trailer-games</h1></div>
-        
-        </nav>
-   </header>
+          <div class="position-absolute top-50 end-0  translate-middle ">
+
+            <button id="popen">      
+              connexion
+             </button> 
+              <button id="popen1">
+              inscription
+            </button> <br><br><br><br><br>
+            <label class="switch position-absolute top-50 end-50 ">
+              <input type="checkbox" checked>
+              <span class="slider round"></span><br>
+              <img src="../img/lune-removebg-preview.png" alt="lune" width="37"
+                class="position-absolute start-10 top-50 translate-middle ">
+              <img src="../img/solei-removebg-preview.png" alt="soleil" width="40"
+                class="position-absolute start-100 top-50 translate-middle  ">
+            </label>
+          </div>
+      </div>
+
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <h1 style="font-size:100px  ; ; color:  rgb(61, 106, 255) ; ">Trailer-games</h1>
+      </div>
+      <div id="popup" class="popup">
+        <form class="container">
+            <div class="img">
+                <img src="../image/Logo Trailer-Games.png" alt="" class="auth">
+            </div>
+            <div class="content">
+                <label><strong>Email or identifier</strong></label>
+                <br>
+                <input type="text" class="textzone" placeholder="Adress@gmail.com or identifier">
+                <br>
+                <label><strong>Password</strong></label>
+                <br>
+                <input type="Password" class="textzone" placeholder="Password">
+                <br>
+                <br>
+                <div class="MDPO">
+                    <label class="form-check-label" for="exampleCheck2">Mot de passe oublié ?
+                    </label>
+                  </div>
+                  <br>
+                <div class="checkboxcss">
+                  <input type="checkbox" class="checkbox" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Rester connecté</label>
+                </div>
+                <br>
+                <button class="submit">Connection</button>
+                <br>
+            </div>
+            <div class="content">
+                <button id="pclose" class="pclose">Annuler</button>
+            </div>
+        </form>
+       </div>
+       <!--Popup inscription-->
+       <div id="popup1" class="popup1">
+        <form class="container1">
+            <div class="img">
+                <img src="../image/Logo Trailer-Games.png" alt="" class="auth">
+            </div>
+            <div class="content">
+                <label><strong>Email</strong></label>
+                <br>
+                <input type="text" class="textzone" placeholder="Adress@gmail.com">
+                <br>
+                <label><strong>Password</strong></label>
+                <br>
+                <input type="Password" class="textzone" placeholder="Password">
+                <br>
+                <label><strong>Confirm Password</strong></label>
+                <br>
+                <input type="CPassword" class="textzone" placeholder="Confirm Password">
+                <br>
+                <label><strong>identifier</strong></label>
+                <br>
+                <input type="text" class="textzone" placeholder="identifier">
+                <br>
+                <label>Veuillez choisir votre date de naissance : <br> <br>
+                  <input type="date" name="party" min="1900-01-01" max="2023-03-31">
+                </label>
+                <br>
+                <br>
+                <label>
+                <div class="checkboxcss">
+                  <input type="checkbox" class="checkbox" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1"> j'accepte les conditions générales d'utilisations</label>
+                </div>
+                <br>
+                <button class="submit">S'inscrire</button>
+                <br>
+            </div>
+            <div class="content">
+                <button id="pclose1" class="pclose1">Annuler</button>
+            </div>
+  
+  
+  
+          </div>
+        </form>
+       </div>
+    </nav>
+    
+    
+  </header>
   
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
