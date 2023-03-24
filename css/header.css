@@ -151,5 +151,3 @@ header {
     transition: box-shadow 0.2s ease-in;
   }
   
-  button{ display: flex;
-    justify-content: end;}
