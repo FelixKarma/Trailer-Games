@@ -1,6 +1,11 @@
- @font-face {
+body {
+    background:url(../image/Fond\ du\ site.png) no-repeat center fixed;
+    background-size: cover;
+}
+
+@font-face {
     font-family: 'Wicked steam';
-    src: url('../police/Wicked Steam.ttf');
+    src: url('/police/Wicked Steam.ttf');
     ;
 }
 header { 
@@ -11,7 +16,7 @@ header {
     justify-content: flex-start;
     align-items: center;
   
-    background-image: url("../image/Fonddusite.png");
+    background-image: url(../img/fond_du_site.PNG);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -77,6 +82,7 @@ header {
   .slider.round:before {
     border-radius: 50%;
   }
+ 
   button {
     position: relative;
     padding: 10px 20px;
@@ -150,8 +156,7 @@ header {
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
-  
-  
+ 
   .popup {
     color: white;
     position: fixed;
