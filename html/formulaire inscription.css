@@ -1,37 +1,117 @@
-body{
-    background-image: url(fond\ du\ site.PNG);
+*{
     margin: 0;
-    background-size:1375px ;
-    padding: 200px 
+    padding: 0;
+    outline:none ;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right,#9e93df 10% ,#e5bcbc );
+}
+.show-btn{
+    background-color: aqua(255,255);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    box: shadow 0px 0px 10px right(0,0,0.1 );
 
-    }
-    main{
-        background-color: rgb(75, 71, 77);
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px;}
-    header{
-        color: #4032b9;
-        background-color: rgb(34, 31, 31);
-        padding-left: 10px;
-        padding-right: 10px;
-       
-       
-    }
-    .header-div{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    #log1{
-        clip-path: ellipse(50% 50%);/*portrai*/
-        /*clip-path:ellipse(33% 50%);paysage*/
-    }
-    
-
-
-
-
-
-
-
+}
+.show-btn, .container{
+    position: absolute;
+    top:50% ;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+input[type="checkbox"]{
+    display: none;
+}
+.container{
+    display: none;
+    background: #df3333;
+    width: 350px;
+    padding: 30p;
+    box-shadow: 0 0 8px #e5bcbc;
+    border-radius: 10px;
+}
+.show:checked ~ .container{
+    display: block;
+}
+.container .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15p;
+    font-size: 18p;
+    cursor: pointer;
+}
+.container .close-btn:hover{
+    color: black;
+}
+.container .text{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+.container form{
+    margin-top: 20px;
+}
+.container form .data{
+    height: 45px;
+    width:100% ;
+    margin: 40px 0;
+}
+form .data input{
+    height: 100px;
+    width: 100;
+    padding-left: 10px; 
+    font-size: 17px;
+    border: 1px solid  silver ;
+    font-weight: bold;
+}
+form .data input:focus{
+    border-color: #e6cccc;
+    border: bottom width 2px; ;
+}
+form .forgot.pass a:hover{
+    text-decoration: underline;
+}
+form .btn{
+    margin: 30px  0;
+    height: 45px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+form .btn .btn .inner{
+    height: 100%;
+    width:300% ;
+    position: absolute;
+    left: 100%;
+    z-index: -1;
+    background: linear-gradient(to right,#df3333);
+    transition: all 0.4s ;
+}
+form .btn button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+form .signup-link{
+    text-align: center;
+}
+form .signup-link a{
+    color: aqua;
+    text-decoration: none;
+}
+form .signup-link a:hover{
+    text-decoration: underline;
+}

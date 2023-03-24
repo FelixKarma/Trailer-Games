@@ -1,46 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMULAIRE</title>
- <link rel="stylesheet" href="formulaire inscription.css">
- <link rel="stylesheet" href="Roboto.htm" >
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMULAIRE</title>
+  <link rel="stylesheet" href="formulaire inscription.css">
+  <script src="fond du site.PNG"></script>
 </head>
 <body>
-  <header>
-    <div class="header-div">
-      <h1> INSCRIS TOI </h1>
-      <img src="Logo_Trailer-Games.png" 
-      alt="log1" height="100" id="log1">
+  <div class="centrer">
+    <input type="checkbox" id="show">
+    <label for="show" class="show-btn">login now</label>
+    <div class="container">
+      <label for="show" class="close-btn fas fa-times" title="close"></label>
+      <div class="text">
+        Login Now</div>
+        <form action="#">
+          <div class="text">
+            <input type="text" placeholder="Email or phone" required>
+          </div>
+          <div class="data">
+            <input type="password" placeholder="Your password" required>
+          </div>
+          <div class="forgot-pass">
+            <a href="#">forgot-password</a></div>
+            <div class="inner">
+
+            </div>
+            <button type="submit">login</button>
+          </div>
+          <div class="signup-link">
+            Not a member? <a href="#">signup now</a>
+          </div>
+        </form>
     </div>
-    
-    <h2> pour Louper AUCUNE NEWS </h2>
-    
-    </header>
-      <main>
-    <label for="idf">votre identifiant <br>
-      <input type="text" placeholder="identifiant" id="idf" name="idf" required><br>
-   </label>
-   <label for="passe">votre Mot de passe <br>
-     <input type="text" placeholder="mot de passe" id="passe" name="passe" required><br>
-   </label>
-   <label for="confpasse">confirmation de votre mot de passe <br>
-    <input type="text" placeholder="confpasse" id="confpasse" name="confpasse" required><br>
-  </label>
-  <label for="mail">votre mail <br>
-    <input type="email" placeholder="a@a.fr" id="mail" name="mail" required><br>
-  </label>
-  <label for="date">votre date d'arrivée <br>
-    <input type="date" id="date" name="date" min="2023-03-07" required><br>
-  </label>
-  <h3>je m'inscris</h3>
-  <label for="choix">En vous inscrivant,vous acceptez nos conditions générales d'utilisation <br>
-    <label for="cga"><input type="radio" name="cga" id="oui" required>j'accepte</label>
-    <label for="cga"><input type="radio" name="cga" id="non" >j'accepte pas</label>
- </label>
- <br>
-</main>
+  </div>
+  
 </body>
 </html>
