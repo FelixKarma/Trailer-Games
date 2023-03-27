@@ -11,49 +11,136 @@
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/onglet principale.css">
-  <script src="../js/speedrun.js"></script>
-  <button onclick="toggleTable('table1')">Afficher/ Masquer Tableau 1</button>
-  <button onclick="toggleTable('table2')">Afficher/ Masquer Tableau 2</button>
+  <script src="../js/connectionpopup.js" async></script>
+  <script src="../js/inscrptionpopup.js" async></script>
+  <script src="../js/speedrun.js" async></script>
+
 
   <title>Document</title>
 
 <body style="background-image:url(../image/Fonddusite.png) ;">
   <header>
-    <nav class="navbar fixed-top bg-black">
+    <nav class="navbar flex-grow-1 bg-black">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="../img/Logo_Trailer-Games.png" alt="" height="180" class="d-inline-block align-text-top">
-        </a>
+</a>
 
-        <div class="position-absolute top-50 end-0  translate-middle ">
+          <div class="position-absolute top-50 end-0  translate-middle ">
 
-          <button>
-            connexion
-          </button>
-          <button>
-            inscription
-          </button> <br><br><br><br><br>
-          <label class="switch position-absolute top-50 end-50 ">
-            <input type="checkbox" checked>
-            <span class="slider round"></span><br>
-            <img src="../img/lune-removebg-preview.png" alt="lune" width="37"
-              class="position-absolute start-10 top-50 translate-middle ">
-            <img src="../img/solei-removebg-preview.png" alt="soleil" width="40"
-              class="position-relative bottom-100 start-50  ms-md-0">
-          </label>
-        </div>
+            <button id="popen">      
+              connexion
+             </button> 
+              <button id="popen1">
+              inscription
+            </button> <br><br><br><br><br>
+            <label class="switch position-absolute top-50 end-50 ">
+              <input type="checkbox" checked>
+              <span class="slider round"></span><br>
+              <img src="../img/lune-removebg-preview.png" alt="lune" width="37"
+                class="position-absolute start-10 top-50 translate-middle ">
+              <img src="../img/solei-removebg-preview.png" alt="soleil" width="40"
+                class="position-absolute start-100 top-50 translate-middle  ">
+            </label>
+          </div>
       </div>
 
       <div class="position-absolute top-50 start-50 translate-middle">
         <h1 style="font-size:100px  ; ; color:  rgb(61, 106, 255) ; ">Trailer-games</h1>
       </div>
-
+      <div id="popup" class="popup">
+        <form class="container">
+            <div class="img">
+                <img src="../image/Logo Trailer-Games.png" alt="" class="auth">
+            </div>
+            <div class="content">
+                <label><strong>Email or identifier</strong></label>
+                <br>
+                <input type="text" class="textzone" placeholder="Adress@gmail.com or identifier">
+                <br>
+                <label><strong>Password</strong></label>
+                <br>
+                <input type="Password" class="textzone" placeholder="Password">
+                <br>
+                <br>
+                <div class="MDPO">
+                    <label class="form-check-label" for="exampleCheck2">Mot de passe oublié ?
+                    </label>
+                  </div>
+                  <br>
+                <div class="checkboxcss">
+                  <input type="checkbox" class="checkbox" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Rester connecté</label>
+                </div>
+                <br>
+                <button class="submit">Connection</button>
+                <br>
+            </div>
+            <div class="content">
+                <button id="pclose" class="pclose">Annuler</button>
+            </div>
+        </form>
+       </div>
+       <!--Popup inscription-->
+       <div id="popup1" class="popup1">
+        <form class="container1">
+            <div class="img">
+                <img src="../image/Logo Trailer-Games.png" alt="" class="auth">
+            </div>
+            <div class="content">
+                <label><strong>Email</strong></label>
+                <br>
+                <input type="text" class="textzone" placeholder="Adress@gmail.com">
+                <br>
+                <label><strong>Password</strong></label>
+                <br>
+                <input type="Password" class="textzone" placeholder="Password">
+                <br>
+                <label><strong>Confirm Password</strong></label>
+                <br>
+                <input type="CPassword" class="textzone" placeholder="Confirm Password">
+                <br>
+                <label><strong>identifier</strong></label>
+                <br>
+                <input type="text" class="textzone" placeholder="identifier">
+                <br>
+                <label>Veuillez choisir votre date de naissance : <br> <br>
+                  <input type="date" name="party" min="1900-01-01" max="2023-03-31">
+                </label>
+                <br>
+                <br>
+                <label>
+                <div class="checkboxcss">
+                  <input type="checkbox" class="checkbox" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1"> j'accepte les conditions générales d'utilisations</label>
+                </div>
+                <br>
+                <button class="submit">S'inscrire</button>
+                <br>
+            </div>
+            <div class="content">
+                <button id="pclose1" class="pclose1">Annuler</button>
+            </div>
+  
+  
+  
+          </div>
+        </form>
+       </div>
     </nav>
+    
+    
   </header>
   <br><br><br><br><br><br><br><br><br><br><br>
   <main>
+          <h2 class="text-center">DARK SOULS 3</h2><br><br><br><br>
+    <button onclick="toggleTable('table1')">Any % No TearDrop</button>
+    <button onclick="toggleTable('table2')">All Bosses</button>
+    <button onclick="toggleTable('table3')">Any % Glitchless</button>
+    <button onclick="toggleTable('table4')">All Bosses Glitchless</button>
+
     <aside class="tab">
-      <centrer> <button class="tablinks" onclick="openCity(event, 'acueille')">
+      <centrer> <button class="tablinks" onclick="openCity(event, 'accueil')">
           <h2>Accueil</h2>
         </button>
         <button class="tablinks" onclick="openCity(event, 'bande-annonce')">
@@ -71,17 +158,427 @@
           <h2>easter-eggs</h2>
         </button>
       </centrer><br><br>
+  
 
 
 
 
     </aside><br>
+
     <div class="card">
+
+      <div class="card-body" style="height: 50%;" >
+
+      
+        <table style="display: block;" id="table1" class="table table-striped table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Joueur</th>
+              <th scope="col">Temps</th>
+              <th scope="col">Plateforme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><img src="../image/1ere place speedrun.png" width="25" height="25"></th>
+              <td><img src="../image/drapeau-france.png" width="25" height="25"> Thierry</td>
+              <td>1h19</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="../image/2eme place.png" width="25" height="25"></th>
+              <td><img src="../image/Drapeau anglais.png" width="25" height="25"> Chris</td>
+              <td>1h22</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="../image/3eme place.png" width="25" height="25"></th>
+              <td><img src="../image/Drapeau allemagne.png" width="25" height="25"> Helmut</td>
+              <td>1h23</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td><img src="../image/Drapeau brésil.png" width="25" height="25"> Joao</td>
+              <td>1h29</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td><img src="../image/drapeau-france.png" width="25" height="25"> Nico</td>
+              <td>1h34</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td><img src="../image/Drapeau AduSUD.png" width="25" height="25"> William</td>
+              <td>1h39</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td><img src="../image/Drapeau Norvege.png" width="25" height="25"> Olga</td>
+              <td>1h44</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td><img src="../image/Drapeau brésil.png" width="25" height="25"> Cris</td>
+              <td>1h49</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td><img src="../image/Drapeau anglais.png" width="25" height="25"> John</td>
+              <td>1h56</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td><img src="../image/drapeau-france.png" width="25" height="25"> Damien</td>
+              <td>1h59</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td><img src="../image/drapeau-france.png" width="25" height="25"> Armand</td>
+              <td>2h00</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td><img src="../image/Drapeau allemagne.png" width="25" height="25"> Oleg</td>
+              <td>2h02</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td><img src="../image/Drapeau anglais.png" width="25" height="25"> Jack</td>
+              <td>2h04</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">14</th>
+              <td><img src="../image/Drapeau Belgique.png" width="25" height="25"> Eden</td>
+              <td>2h07</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">15</th>
+              <td><img src="../image/Drapeau brésil.png" width="25" height="25"> Brunoo</td>
+              <td>2h11</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">16</th>
+              <td><img src="../image/Drapeau Islande.png" width="25" height="25"> Eirikur</td>
+              <td>2h14</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">17</th>
+              <td><img src="../image/Drapeau Norvege.png" width="25" height="25"> Harald</td>
+              <td>2h17</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">18</th>
+              <td><img src="../image/drapeau-france.png" width="25" height="25"> Nicolas</td>
+              <td>2h20</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">19</th>
+              <td><img src="../image/drapeau-france.png" width="25" height="25"> Benji</td>
+              <td>2h23</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">20</th>
+              <td><img src="../image/Drapeau AduSUD.png" width="25" height="25"> Kim</td>
+              <td>2h27</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">21</th>
+              <td><img src="../image/Drapeau anglais.png" width="25" height="25"> Declan</td>
+              <td>2h30</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">22</th>
+              <td><img src="../image/Drapeau Islande.png" width="25" height="25"> Adiel</td>
+              <td>2h34</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">23</th>
+              <td><img src="../image/Drapeau pays-bas.png" width="25" height="25"> Aelbert</td>
+              <td>2h37</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">24</th>
+              <td><img src="../image/drapeau-france.png" width="25" height="25"> Arthur</td>
+              <td>2h39</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">25</th>
+              <td><img src="../image/drapeau-france.png" width="25" height="25"> Jules</td>
+              <td>2h40</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">26</th>
+              <td><img src="../image/Drapeau allemagne.png" width="25" height="25"> Ludwig</td>
+              <td>2h44</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">27</th>
+              <td><img src="../image/drapeau-france.png" width="25" height="25"> Nathan</td>
+              <td>2h47</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">28</th>
+              <td><img src="../image/drapeau-france.png" width="25" height="25"> Hugo</td>
+              <td>2h50</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">29</th>
+              <td><img src="../image/drapeau-france.png" width="25" height="25"> Noé</td>
+              <td>2h54</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">30</th>
+              <td><img src="../image/drapeau-france.png" width="25" height="25"> Victor</td>
+              <td>2h57</td>
+              <td>PS4</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+       
+
+
+      </div>
+    </div>
+     <div class="card">
 
       <div class="card-body" style="height: 50%;">
 
         <p class="card-text">
-        <table class="table table-striped table-dark">
+        <table style="display: none;" id="table2" class="table table-striped table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Joueur</th>
+              <th scope="col">Temps</th>
+              <th scope="col">Plateforme</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><img src="../image/1ere place speedrun.png" width="25" height="25"></th>
+              <td><img src="../image/Drapeau Belgique.png" width="25" height="25"> Thierry</td>
+              <td>1h58</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="../image/2eme place.png" width="25" height="25"></th>
+              <td><img src="../image/Drapeau brésil.png" width="25" height="25"> Chris</td>
+              <td>2h00</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="../image/3eme place.png" width="25" height="25"></th>
+              <td><img src="../image/Drapeau anglais.png" width="25" height="25"> Helmut</td>
+              <td>2h03</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td><img src="../image/Drapeau Islande.png" width="25" height="25"> Joao</td>
+              <td>2h07</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td><img src="../image//Drapeau Norvege.png" width="25" height="25"> Nico</td>
+              <td>2h10</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td><img src="../image/Drapeau AduSUD.png" width="25" height="25"> William</td>
+              <td>2h13</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td><img src="../image/drapeau-france.png" width="25" height="25"> Olga</td>
+              <td>2h16</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td><img src="../image/Drapeau Norvege.png" width="25" height="25"> Cris</td>
+              <td>2h20</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td><img src="../image/Drapeau brésil.png" width="25" height="25"> John</td>
+              <td>2h24</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td><img src="../image/Drapeau brésil.png" width="25" height="25"> Damien</td>
+              <td>2h27</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td><img src="../image/drapeau-france.png" width="25" height="25"> Armand</td>
+              <td>2h30</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td><img src="../image/Drapeau allemagne.png" width="25" height="25"> Oleg</td>
+              <td>2h34</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td><img src="../image/Drapeau brésil.png" width="25" height="25"> Jack</td>
+              <td>2h37</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">14</th>
+              <td><img src="../image/Drapeau Belgique.png" width="25" height="25"> Eden</td>
+              <td>2h40</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">15</th>
+              <td><img src="../image/Drapeau AduSUD.png" width="25" height="25"> Brunoo</td>
+              <td>2h41</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">16</th>
+              <td><img src="../image/Drapeau brésil.png" width="25" height="25"> Eirikur</td>
+              <td>2h43</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">17</th>
+              <td><img src="../image/Drapeau Norvege.png" width="25" height="25"> Harald</td>
+              <td>2h45</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">18</th>
+              <td><img src="../image/Drapeau allemagne.png" width="25" height="25"> Nicolas</td>
+              <td>2h47</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">19</th>
+              <td><img src="../image/Drapeau Belgique.png" width="25" height="25"> Benji</td>
+              <td>2h50</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">20</th>
+              <td><img src="../image/Drapeau Belgique.png" width="25" height="25"> Kim</td>
+              <td>2h51</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">21</th>
+              <td><img src="../image/Drapeau brésil.png" width="25" height="25"> Declan</td>
+              <td>2h53</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">22</th>
+              <td><img src="../image/Drapeau anglais.png" width="25" height="25"> Adiel</td>
+              <td>2h55</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">23</th>
+              <td><img src="../image/Drapeau Belgique.png" width="25" height="25"> Aelbert</td>
+              <td>2h56</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">24</th>
+              <td><img src="../image/Drapeau brésil.png" width="25" height="25"> Arthur</td>
+              <td>2h58</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">25</th>
+              <td><img src="../image/Drapeau Norvege.png" width="25" height="25"> Jules</td>
+              <td>2h59</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">26</th>
+              <td><img src="../image/Drapeau anglais.png" width="25" height="25"> Ludwig</td>
+              <td>3h00</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">27</th>
+              <td><img src="../image/Drapeau Islande.png" width="25" height="25"> Nathan</td>
+              <td>3h02</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">28</th>
+              <td><img src="../image/Drapeau pays-bas.png" width="25" height="25"> Hugo</td>
+              <td>3h05</td>
+              <td>PC</td>
+            </tr>
+            <tr>
+              <th scope="row">29</th>
+              <td><img src="../image/Drapeau AduSUD.png" width="25" height="25"> Noé</td>
+              <td>3h07</td>
+              <td>PS4</td>
+            </tr>
+            <tr>
+              <th scope="row">30</th>
+              <td><img src="../image/Drapeau allemagne.png width="25" height="25"> Victor</td>
+              <td>3h10</td>
+              <td>PS4</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+        </p>
+
+
+      </div>
+    </div> 
+     <div class="card">
+
+      <div class="card-body" style="height: 50%;">
+
+        <p class="card-text">
+        <table style="display: none;" id="table3" class="table table-striped table-dark">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -279,13 +776,13 @@
 
 
       </div>
-    </div>
-    <div class="card">
+    </div> 
+     <div class="card">
 
       <div class="card-body" style="height: 50%;">
 
         <p class="card-text">
-        <table class="table table-striped table-dark">
+        <table style="display: none;" id="table4" class="table table-striped table-dark">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -483,7 +980,7 @@
 
 
       </div>
-    </div>
+    </div> 
   </main>
   <footer>
 
