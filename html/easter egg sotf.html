@@ -2,74 +2,164 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-     content="IE=edge">
-    <meta name="viewport" 
-    content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header general</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/Footer.css">
+    <link rel="stylesheet" href="../css/header bouton.css">
+    <link rel="stylesheet" href="../css/easter egg sotf.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/Easter Egg SOTF.css">
-    <link rel="stylesheet" href="../css/onglet principale.css">
+    <script src="../js/connectionpopup.js" async></script>
+    <script src="../js/inscrptionpopup.js" async></script>
 </head>
-<body style="background-image: url(../image/fond_site.png)">
-    <header>
-        <nav class="navbar fixed-top bg-black" >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../img/Logo_Trailer-Games.png" alt=""  height="180" class="d-inline-block align-text-top">
-        
-  
-        <div class="position-absolute top-50 end-0  translate-middle "> 
-        
-          <button>      
-         connexion
-        </button> 
-         <button>
-            inscription
-         </button> <br><br><br><br><br>
-        <label class="switch position-absolute top-50 end-50 "  >
-          <input type="checkbox" checked>
-          <span class="slider round"></span><br>
-          <img src="../img/lune-removebg-preview.png" alt="lune" width="37" class="position-absolute start-10 top-50 translate-middle ">
-          <img src="../img/solei-removebg-preview.png" alt="soleil" width="40" class="position-relative bottom-100 start-50  ms-md-0" >
-        </label></div>
-         </div>
+<body>
+  <header>
+    <nav class="navbar flex-grow-1 bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../img/Logo_Trailer-Games.png" alt="" height="180" class="d-inline-block align-text-top">
+</a>
 
-        <div class="position-absolute top-50 start-50 translate-middle" ><h1 style="font-size:100px  ; ; color:  rgb(61, 106, 255) ; "  >Trailer-games</h1></div>
-        
-        </nav>
-    </header>
-    <main>
-        <section>
-          <img src="../image/fond de the forest.jpg" alt="" class="" width="1500" height="">
-    </section>
-</main>
-<footer class="position-absolute translate-middle start-50 bottom-0 translate-middle-x">
-  <nav class="navbar fixed-top bg-black" >
+          <div class="position-absolute top-50 end-0  translate-middle ">
+
+            <button id="popen">      
+              connexion
+             </button> 
+              <button id="popen1">
+              inscription
+            </button> <br><br><br><br><br>
+            <label class="switch position-absolute top-50 end-50 ">
+              <input type="checkbox" checked>
+              <span class="slider round"></span><br>
+              <img src="../img/lune-removebg-preview.png" alt="lune" width="37"
+                class="position-absolute start-10 top-50 translate-middle ">
+              <img src="../img/solei-removebg-preview.png" alt="soleil" width="40"
+                class="position-absolute start-100 top-50 translate-middle  ">
+            </label>
+          </div>
+      </div>
+
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <h1 style="font-size:100px  ; ; color:  rgb(61, 106, 255) ; ">Trailer-games</h1>
+      </div>
+      <div id="popup" class="popup">
+        <form class="container">
+            <div class="img">
+                <img src="../image/Logo Trailer-Games.png" alt="" class="auth">
+            </div>
+            <div class="content">
+                <label><strong>Email or identifier</strong></label>
+                <br>
+                <input type="text" class="textzone" placeholder="Adress@gmail.com or identifier">
+                <br>
+                <label><strong>Password</strong></label>
+                <br>
+                <input type="Password" class="textzone" placeholder="Password">
+                <br>
+                <br>
+                <div class="MDPO">
+                    <label class="form-check-label" for="exampleCheck2">Mot de passe oublié ?
+                    </label>
+                  </div>
+                  <br>
+                <div class="checkboxcss">
+                  <input type="checkbox" class="checkbox" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Rester connecté</label>
+                </div>
+                <br>
+                <button class="submit">Connection</button>
+                <br>
+            </div>
+            <div class="content">
+                <button id="pclose" class="pclose">Annuler</button>
+            </div>
+        </form>
+       </div>
+       <!--Popup inscription-->
+       <div id="popup1" class="popup1">
+        <form class="container1">
+            <div class="img">
+                <img src="../image/Logo Trailer-Games.png" alt="" class="auth">
+            </div>
+            <div class="content">
+                <label><strong>Email</strong></label>
+                <br>
+                <input type="text" class="textzone" placeholder="Adress@gmail.com">
+                <br>
+                <label><strong>Password</strong></label>
+                <br>
+                <input type="Password" class="textzone" placeholder="Password">
+                <br>
+                <label><strong>Confirm Password</strong></label>
+                <br>
+                <input type="Password" class="textzone" placeholder="Confirm Password">
+                <br>
+                <label><strong>identifier</strong></label>
+                <br>
+                <input type="text" class="textzone" placeholder="identifier">
+                <br>
+                <label>Veuillez choisir votre date de naissance : <br> <br>
+                  <input type="date" name="party" min="1900-01-01" max="2023-03-31">
+                </label>
+                <br>
+                <br>
+                <label>
+                <div class="checkboxcss">
+                  <input type="checkbox" class="checkbox" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1"> j'accepte les conditions générales d'utilisations</label>
+                </div>
+                <br>
+                <button class="submit">S'inscrire</button>
+                <br>
+            </div>
+            <div class="content">
+                <button id="pclose1" class="pclose1">Annuler</button>
+            </div>
+          </div>
+        </form>
+       </div>
+    </nav>
+    
+    
+  </header>
+  <figure>
+    <img src="../image/fond de the forest.jpg" alt="">
+  </figure>
+
+
+
+  <footer>
+
+    <nav class="navbar flex-grow-1 bg-black  ">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="../image/Logo Trailer-Games.png" alt="" width="90" height="90" class="align-middle"><br></a>
-          
-          <br>
-          <br>
-          <a href="https://www.instagram.com/" target="_blank"><img src="../image/Insta logo.png" alt="" width="30" height="30"></a>
-          <a href="https://...twitter.com/" target="_blank"><img src="../image/twitter.png" alt="" width="30" height="30"></a>
-          <a href="https://fr-fr.facebook.com/" target="_blank"><img src="../image/facebook.png" alt="" width="30" height="30"></a>
-        
 
-      <div class="position-absolute bottom-0 start-50 translate-middle" ><h2 style="font: size 100px ; color:  rgb(61, 106, 255) ; "  ></h2></div>
-      
-      <a href="https://www.francenum.gouv.fr/guides-et-conseils/developpement-commercial/site-web/rediger-des-conditions-generales-dutilisation" target="_blank">Condition générales d'utilisations</a><br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+        <br>
+        <br>
+        <a href="https://www.instagram.com/" target="_blank"><img src="../image/Insta logo.png" alt="" width="30"
+            height="30"></a>
+        <a href="https://...twitter.com/" target="_blank"><img src="../image/twitter.png" alt="" width="30"
+            height="30"></a>
+        <a href="https://fr-fr.facebook.com/" target="_blank"><img src="../image/facebook.png" alt="" width="30"
+            height="30"></a>
+
+
+        <div class="position-absolute bottom-0 start-50 translate-middle">
+          <h2 style="font: size 100px ; color:  rgb(61, 106, 255) ; "></h2>
+        </div>
+
+        <a href="https://www.francenum.gouv.fr/guides-et-conseils/developpement-commercial/site-web/rediger-des-conditions-generales-dutilisation"
+          target="_blank">Condition générales d'utilisations</a><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </nav>
   
 

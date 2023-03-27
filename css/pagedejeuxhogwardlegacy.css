@@ -1,6 +1,8 @@
  footer{
+  
       width: 100%; height: 50px;
       bottom: 0; left: 0; right: 0;
+    
       /* Reste du CSS... */
     }
 body{ 
@@ -164,7 +166,35 @@ body{
       transition: box-shadow 0.2s ease-in;
     }
   .card{
+   
     background-color:transparent;
     border:none ;
     
   }
+
+img:hover {
+    /* background: rgb(61, 106, 255); */
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+img:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear}
+
+    video:hover {
+      background: rgb(61, 106, 255);
+      box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+    }
+    
+   video:hover::before {
+      -webkit-animation: sh02 0.5s 0s linear;
+      -moz-animation: sh02 0.5s 0s linear;
+      animation: sh02 0.5s 0s linear;}
+      
