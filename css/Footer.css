@@ -23,7 +23,7 @@ position: absolute;
 body {display: flex;
 flex-direction: column;
 background-image: image-set(src="../img/fond du site.PNG" alt="cc");
-background-image: url("../image/Fond\ du\ site.png");
+background-image: url("../image/fond_site.png");
 background-repeat: no-repeat;
 background-size: cover
  };
