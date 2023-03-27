@@ -1,4 +1,4 @@
-body{box-sizing: border-box}
+/* body{box-sizing: border-box} */
 
 
 .tab {
@@ -7,9 +7,9 @@ body{box-sizing: border-box}
   border: 6px solid #010101;
   background-color: #605f5f;
   width: 19%;
-  height: 1500px;
-  background-position-y: 100%;
-  background-position-x: 60%;
+  height: 2500px;
+  /* background-position-y: 100%;
+  background-position-x: 60%; */
 }
 
 
