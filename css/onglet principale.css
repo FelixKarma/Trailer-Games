@@ -4,8 +4,8 @@ body{box-sizing: border-box}
 .tab {
   
   float: left;
-  border: 15px solid #ffffff;
-  background-color: #ffffff;
+  border: 6px solid #010101;
+  background-color: #605f5f;
   width: 19%;
   height: 1500px;
   background-position-y: 100%;
