@@ -1,10 +1,4 @@
- footer{
-  
-      width: 100%; height: 50px;
-      bottom: 0; left: 0; right: 0;
-    
-      /* Reste du CSS... */
-    }
+
 body{ 
   background-image: url("../image/Fonddusite.png");
        background-repeat: no-repeat;
@@ -198,3 +192,4 @@ img:hover::before {
       -moz-animation: sh02 0.5s 0s linear;
       animation: sh02 0.5s 0s linear;}
       
+     
