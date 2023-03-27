@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="../css/Footer.css">
     <link rel="stylesheet" href="../css/header bouton.css">
     <link rel="stylesheet" href="../css/easter egg sotf.css">
+    <link rel="stylesheet" href="../css/page d'accueil.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <script src="../js/connectionpopup.js" async></script>
     <script src="../js/inscrptionpopup.js" async></script>
 </head>
-<body>
+<body style="background-image:url(../image/Fonddusite.png) ;">
   <header>
     <nav class="navbar flex-grow-1 bg-black">
       <div class="container-fluid">
@@ -124,12 +125,37 @@
     
     
   </header>
-  <figure>
-    <img src="../image/fond de the forest.jpg" alt="">
-  </figure>
+  <main>
+    <aside class="tab"><br><br><br><br><br>
+      <button class="tablinks" onclick="openCity(event, 'accueil');">
+        <h2>accueil</h2>
+      </button> <br><br><br><br>
+      <button class="tablinks" onclick="openCity(event, 'bande-annonce')">
+        <h2>bande-annonce</h2>
+      </button><br><br><br>
+      <button class="tablinks" onclick="openCity(event, 'jeux a venir')">
+        <h2>jeux a venir</h2>
+      </button><br><br><br>
+      <button class="tablinks" onclick="openCity(event, 'actus du jeux-vidéo')">
+        <h2>
+          <p>actus du jeux-vidéo</p>
+        </h2>
+      </button><br><br><br>
+      <button class="tablinks" onclick="openCity(event, 'easter-eggs')">
+        <h2>easter-eggs</h2>
+      </button><br><br>
 
+      <div class="insta"></div>
+    </aside>
 
+    <section>
+      <div class="card">
+        <img src="../image/sons of the forest.jpg" alt="">
+        
 
+      </div>
+    </section>
+  </main>
   <footer>
 
     <nav class="navbar flex-grow-1 bg-black  ">

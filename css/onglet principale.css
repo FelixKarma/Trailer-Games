@@ -4,12 +4,12 @@
 .tab {
   
   float: left;
-  border: 6px solid #0c0a0a;
-  background-color: #605f5f5F;
+  border: 6px solid #010101;
+  background-color: #605f5f;
   width: 19%;
-  height: 1500px;
-  background-position-y: 100%;
-  background-position-x: 60%;
+  height: 2500px;
+  /* background-position-y: 100%;
+  background-position-x: 60%; */
 }
 
 
