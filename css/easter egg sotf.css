@@ -1,19 +1,33 @@
 main {
-  background-image: url(../image/fond\ de\ the\ forest.jpg);
+  background-image: url(../image/fond_site.png);
 }
 body{ 
-  background-image: url("../image/Fonddusite.png");
+  background-image: url("../image/fond_site.png");
        background-repeat: no-repeat;
        background-size:cover;
        background-size: 101%;
        
  }
- .card {
-  background-image: url(../image/sons\ of\ the\ forest.jpg);
-  background-repeat: no-repeat;
-  background-color: black;
-  width: 700px;
-  height: 2000px;
-  margin-left: 770px;
+
+ @font-face {
+  font-family: 'Wicked steam';
+  src: url('/police/Wicked Steam.ttf');
+  ;
+}
+
+.easteregg {
+  color: white;
+  font-size: 20px;
+  text-align: center;
   
- }
+}
+
+.eastereggh1 {
+  color: white;
+  text-align: center;
+}
+
+.imgSOTF {
+  width: 1000px;
+  margin-left: 14%;
+}
