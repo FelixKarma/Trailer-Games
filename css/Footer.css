@@ -22,8 +22,8 @@ position: absolute;
 
 body {display: flex;
 flex-direction: column;
-background-image: image-set(src="../img/fond du site.PNG" alt="connard");
-background-image: url("../img/fond\ du\ site.PNG");
+background-image: image-set(src="../img/fond du site.PNG" alt="cc");
+background-image: url("../image/fond_site.png");
 background-repeat: no-repeat;
 background-size: cover
 };
@@ -44,7 +44,7 @@ float: left;
 border: 15px solid #ffffff;
 background-color: #ffffff;
 width: 19%;
-height: 1500px;
+height: 1497px;
 background-position-y: 100%;
 background-position-x: 60%;
 }
@@ -85,8 +85,8 @@ background-color: #8a8a8a;
 }
 
 
-h2{display: flex;
-text-align: center
+h2{
+text-align: center;
 }
 
 footer { 
@@ -106,6 +106,6 @@ footer {
 }
 
 
-main{
+/* main{
    margin-bottom: 200px !important; 
-}
+} */
