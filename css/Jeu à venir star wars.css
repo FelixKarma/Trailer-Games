@@ -1,0 +1,25 @@
+@font-face {
+     font-family: 'Wicked steam';
+     src: url('/police/Wicked Steam.ttf');
+     ;
+ }
+
+    @font-face {
+        font-family: 'starjout';
+        src: url('../police/Starjout.ttf');
+        
+    }
+    @font-face {
+        font-family: 'stjedise';
+        src: url('../police/STJEDISE.TTF');
+    }
+    h5{
+        font-family: 'starjout';
+    
+    }
+    h3{
+        font-family: 'stjedise';
+    }
+    .textejedi{
+        color:cornflowerblue;
+    }

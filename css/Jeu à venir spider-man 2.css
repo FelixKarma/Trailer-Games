@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Wicked steam';
+    src: url('/police/Wicked Steam.ttf');
+    ;
+}
+
+   @font-face {
+       font-family: 'Josefinitalic';
+       src: url('../police/Josefinitalic.ttf');
+       
+   }
+   @font-face {
+       font-family: 'Josefin';
+       src: url('../police/Josefin.ttf');
+   }
+   h5{
+       font-family: 'Josefinitalic';
+   
+   }
+   h3{
+       font-family: 'Josefin';
+   }
+   .textejedi{
+       color:white;
+   }
