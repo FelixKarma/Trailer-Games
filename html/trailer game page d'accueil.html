@@ -5,89 +5,165 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hogward legacy </title>
+  <script src="../js/connectionpopup.js" async></script>
+  <script src="../js/inscrptionpopup.js" async></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/onglet principale.css">
+  <link rel="stylesheet" href="../css/pagedejeuxhogwardlegacy.css">
   <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/header bouton.css">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/page d'accueil.css">
+
+  <link rel="stylesheet" href="../css/Footer.css">
 </head>
 
-<body>
+<body style="background-image:url(../image/Fonddusite.png) ;">
+  <header>
+    <nav class="navbar flex-grow-1 bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../img/Logo_Trailer-Games.png" alt="" height="180" class="d-inline-block align-text-top">
+        </a>
 
+        <div class="position-absolute top-50 end-0  translate-middle ">
 
-  <body>
+          <button id="popen">
+            connexion
+          </button>
+          <button id="popen1">
+            inscription
+          </button> <br><br><br><br><br>
+          <label class="switch position-absolute top-50 end-50 ">
+            <input type="checkbox" checked>
+            <span class="slider round"></span><br>
+            <img src="../img/lune-removebg-preview.png" alt="lune" width="37"
+              class="position-absolute start-10 top-50 translate-middle ">
+            <img src="../img/solei-removebg-preview.png" alt="soleil" width="40"
+              class="position-absolute start-100 top-50 translate-middle  ">
+          </label>
+        </div>
+      </div>
 
-
-    <header>
-      <nav class="navbar top w-100 bg-black">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../img/Logo_Trailer-Games.png" alt="" height="180" class="d-inline-block align-text-top">
-          </a>
-
-          <div class="position-absolute top-50 end-0  translate-middle ">
-
-            <button>
-              <a href="http://www.google.fr/"></a>
-              connexion
-            </button>
-            <button>
-              inscription
-            </button> <br><br><br><br><br>
-            <label class="switch position-absolute top-50 end-50 ">
-              <input type="checkbox" checked>
-              <span class="slider round"></span><br>
-              <img src="../img/lune-removebg-preview.png" alt="lune" width="37"
-                class="position-absolute start-0 top-50 translate-middle ">
-              <img src="../img/solei-removebg-preview.png" alt="soleil" width="40"
-                class="position-absolute  start-100 top-50 translate-middle ">
-            </label>
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <h1 style="font-size:100px  ; ; color:  rgb(61, 106, 255) ; ">Trailer-games</h1>
+      </div>
+      <div id="popup" class="popup">
+        <form class="container">
+          <div class="img">
+            <img src="../image/Logo Trailer-Games.png" alt="" class="auth">
           </div>
-        </div>
+          <div class="content">
+            <label><strong>Email or identifier</strong></label>
+            <br>
+            <input type="text" class="textzone" placeholder="Adress@gmail.com or identifier">
+            <br>
+            <label><strong>Password</strong></label>
+            <br>
+            <input type="Password" class="textzone" placeholder="Password">
+            <br>
+            <br>
+            <div class="MDPO">
+              <label class="form-check-label" for="exampleCheck2">Mot de passe oublié ?
+              </label>
+            </div>
+            <br>
+            <div class="checkboxcss">
+              <input type="checkbox" class="checkbox" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Rester connecté</label>
+            </div>
+            <br>
+            <button class="submit">Connection</button>
+            <br>
+          </div>
+          <div class="content">
+            <button id="pclose" class="pclose">Annuler</button>
+          </div>
+        </form>
+      </div>
+      <!--Popup inscription-->
+      <div id="popup1" class="popup1">
+        <form class="container1">
+          <div class="img">
+            <img src="../image/Logo Trailer-Games.png" alt="" class="auth">
+          </div>
+          <div class="content">
+            <label><strong>Email</strong></label>
+            <br>
+            <input type="text" class="textzone" placeholder="Adress@gmail.com">
+            <br>
+            <label><strong>Password</strong></label>
+            <br>
+            <input type="Password" class="textzone" placeholder="Password">
+            <br>
+            <label><strong>Confirm Password</strong></label>
+            <br>
+            <input type="CPassword" class="textzone" placeholder="Confirm Password">
+            <br>
+            <label><strong>identifier</strong></label>
+            <br>
+            <input type="text" class="textzone" placeholder="identifier">
+            <br>
+            <label>Veuillez choisir votre date de naissance : <br> <br>
+              <input type="date" name="party" min="1900-01-01" max="2023-03-31">
+            </label>
+            <br>
+            <br>
+            <label>
+              <div class="checkboxcss">
+                <input type="checkbox" class="checkbox" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1"> j'accepte les conditions générales
+                  d'utilisations</label>
+              </div>
+              <br>
+              <button class="submit">S'inscrire</button>
+              <br>
+          </div>
+          <div class="content">
+            <button id="pclose1" class="pclose1">Annuler</button>
+          </div>
 
-        <div class="position-absolute top-50 start-50 translate-middle">
-          <h1 style="font-size:100px  ; ; color:  rgb(61, 106, 255) ; ">Trailer-games</h1>
-        </div>
-
-      </nav>
-    </header>
 
 
+      </div>
+      </form>
+      </div>
+    </nav>
 
 
-
+  </header>
 
 
 
-    <main style="background-image: url(../image/Fonddusite.png);">  
-      <!-- <div style="border: 10px solid #000000;"></div> -->
-      <aside class="tab"><br><br><br><br><br>
-        <button class="tablinks" onclick="openCity(event, 'accueil');">
+
+
+  <main  >
+
+    <aside style=" border: 10px solid #000000; background-color: #605f5f; " class="tab">
+      <centrer> <a href="../html/trailer game page d'accueil.html"><button class="tablinks" >
           <h2>accueil</h2>
-        </button> <br><br><br><br>
-        <button class="tablinks" onclick="openCity(event, 'bande-annonce')">
-          <h2>bande-annonce</h2>
-        </button><br><br><br>
-        <button class="tablinks" onclick="openCity(event, 'jeux a venir')">
+        </button></a>
+        <a href="../html/speedrun.html"><button class="tablinks" >
+          <h2>Speedrun</h2>
+        </button></a>
+        <a href="../html/page-de-jeu-star-wars.html"><button class="tablinks" >
           <h2>jeux a venir</h2>
-        </button><br><br><br>
-        <button class="tablinks" onclick="openCity(event, 'actus du jeux-vidéo')">
+        </button></a>
+        <button class="tablinks" >
           <h2>
             <p>actus du jeux-vidéo</p>
           </h2>
-        </button><br><br><br>
-        <button class="tablinks" onclick="openCity(event, 'easter-eggs')">
-          <h2>easter-eggs</h2>
-        </button><br><br>
-
-        <div class="insta">
-
-        </div>
+        </button>
+        <a href="../html/Easter-EggtheWitcher.html"></a><button class="tablinks" >
+          <h2>easter-eggs
+          </h2>
+        </button>
+      </centrer>
 
 
-      </aside>
-      <div style="border: 5px solid #000000;"></div>
+
+    </aside>
+      <div style="border: 6px solid #000000;"></div>
 
 
       <div class="jeux2023">
@@ -95,16 +171,16 @@
             width="600px"><br><br><br><br><br>
 
           <h3>les jeux sortie en février:</h3> <br><br>
-          <button class="tablinks"  onclick="open(event,'hogwart')">
-            <a target="_blank"><img style="margin-right: 1000%;" src="../image/hogwart legacy trailer.jpg" alt="" width="350"
+          <button class="tablinks"  >
+            <a href="../html/page-de-jeux-hogward-legacy.html"><img style="margin-right: 1000%;" src="../img/hogwarts-legacy.jpg" alt="" width="350"
                 height="200"></a></button>
 
-          <button class="tablinks" onclick="open(event,'songs of the forest')">
-            <a target="_blank"><img src="../image/the songs of the forest trailer.jpg" alt="" width="350"
+          <button class="tablinks" >
+            <a href="../html/page-de-jeux-son-of-the-forest.html"><img src="../image/the songs of the forest trailer.jpg" alt="" width="350"
                 height="200"></a></button>
 
-          <button class="tablinks" onclick="open(event,'witcher 3')">
-            <a target="_blank"><img src="../image/witcher 3 trailer.jpg" alt="" width="350" height="200"></a></button>
+          <button class="tablinks" >
+            <a href="../html/page-de-jeux-the-witcher.html"><img src="../image/witcher 3 trailer.jpg" alt="" width="350" height="200"></a></button>
           <br><br><br><br><br><br><br><br><br><br><br>
 
 
@@ -112,17 +188,18 @@
 
 
           <h3>les meilleurs jeux à venir:</h3><br><br>
-          <button class="tablinks" onclick="open(event,'spider man 2')">
+          <button class="tablinks" >
             <a target="_blank"><img src="../image/spider man 2.jpg" alt="" width="350" height="200"></a></button>
 
-          <button class="tablinks" onclick="open(event,'Resident evil 4')">
+          <button class="tablinks" >
             <a target="_blank"><img src="../image/Resident evil 4.jpg" alt="" width="350" height="200"></a></button>
 
-          <button class="tablinks" onclick="open(event,'survivor')">
-            <a target="_blank"><img src="../image/jedi survivor.jpg" alt="" width="350" height="200"></a></button>
+          <button class="tablinks" >
+            <a href="../html/page-de-jeu-star-wars.html"><img src="../image/jedi survivor.jpg" alt="" width="350" height="200"></a></button>
 
         </div>
       </div>
+    
     </main>
     <footer>
 
