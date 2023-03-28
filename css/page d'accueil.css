@@ -196,7 +196,7 @@ header{background-color: rgb(0, 0, 0);
   border: 6px solid #000000;
   background-color: #605f5f;
   width: 19%;
-  height: 1900px;
+  height: 2500px;
   background-position-y: 100%;
   background-position-x: 60%;
 }
@@ -239,7 +239,7 @@ header{background-color: rgb(0, 0, 0);
 
 
 h2{display: flex;
-justify-content: center;
+text-align: center;
 }
 
 footer { 
@@ -265,14 +265,7 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-
-   
 }
 
 
-
-h3{display: flex;
-  align-items: flex-start;
-margin-left: 22%;}
 

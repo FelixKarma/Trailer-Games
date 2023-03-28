@@ -196,7 +196,7 @@ body{box-sizing: border-box}
   border: 15px solid #010101;
   background-color: #323232;
   width: 19%;
-  height: 1800px;
+  height: 1500px;
   background-position-y: 100%;
   background-position-x: 60%;
 }
@@ -273,8 +273,11 @@ main{
 
 #global
 {
- padding:400px;
- width: 90%;
+ padding:300px;
+ width: 100%;
+
+display: flex;
+justify-content: center;
  
 }
 #page
@@ -293,33 +296,21 @@ main{
   margin: 100px;
  
 }
-#page
-{
-  background:rgb(70, 69, 69);
- 
+#page-blanche
+{  background-color: rgb(80, 80, 80);
+  height: 800px;
+  width: 65%;
+  position: absolute;
+  z-index: 1;
   border-radius: 3%;
-  background-size: 150%;
-  position: relative;
- 
+  margin-left: 20%;
 }
+
+  
+
 #corps
 {
   padding:10px;
  
 }
 
-h3{ display: flex;
-justify-content: right;
-}
-
-ul{ display: flex;
-justify-content: left;
-;}
-
-.trailer{ border-radius: 50%;}
-
-h5{
-  display: flex;
-  justify-content: start;
-  color: #010101;
-}
