@@ -193,8 +193,8 @@ body{box-sizing: border-box}
 
 .tab {
   float: left;
-  border: 15px solid #ffffff;
-  background-color: #ffffff;
+  border: 15px solid #010101;
+  background-color: #323232;
   width: 19%;
   height: 1800px;
   background-position-y: 100%;
@@ -244,7 +244,7 @@ text-align: center
 footer { 
 
     font-family: 'Quicksand';
-    color: white;
+    color: rgb(43, 43, 43);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -267,6 +267,59 @@ main{
 
    
 }
-.page-item{
+
+
+
+
+#global
+{
+ padding:400px;
+ width: 90%;
+ 
+}
+#page
+{
+  border:1px gray solid;
+  background:rgb(33, 33, 33);
   
+}
+#corps
+{
+  padding: 5px;
+}
+
+#global
+{
+  margin: 100px;
+ 
+}
+#page
+{
+  background:rgb(70, 69, 69);
+ 
+  border-radius: 3%;
+  background-size: 150%;
+  position: relative;
+ 
+}
+#corps
+{
+  padding:10px;
+ 
+}
+
+h3{ display: flex;
+justify-content: right;
+}
+
+ul{ display: flex;
+justify-content: left;
+;}
+
+.trailer{ border-radius: 50%;}
+
+h5{
+  display: flex;
+  justify-content: start;
+  color: #010101;
 }
