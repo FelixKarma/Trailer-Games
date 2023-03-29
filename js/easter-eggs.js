@@ -1,15 +1,25 @@
-function activateMario() {
-    var mario = document.getElementById("mario");
-    mario.style.display = "block";
-  }
-  document.body.ondblclick = activateMario;
-   
-  function activateMario() {
-  var mario = document.getElementById("https://github.com/dfranklinau/super-paper-mario.git");
-  mario.style.display = "block";
-  // Ajouter des animations
-  mario.classList.add("https://github.com/dfranklinau/super-paper-mario.git");
-  // Jouer des sons de style Mario
-  var audio = new Audio("mario_sound.mp3");
-  audio.play("https://sonneriepro.com/jeux/sonnerie-super-mario-bros/");
+var audioSmashBall = new Audio();
+    audioSmashBall.src="";
+
+var euroBeatsSmashBall = new Audio();
+euroBeatsSmashBall.src="";
+
+
+let ImgEasterEgg = document.getElementById('');
+
+function Actived(){
+    ImgEasterEgg.style.display = "block";
+    euroBeatsSmashBall.play();
+}
+
+let paf = 0;
+
+function (){
+    paf++;
+
+    if(paf==3){
+        audioSmashBall.play();
+        ImgEasterEgg.style.display = "none";
+        euroBeatsSmashBall.pause();
+    }
 }
