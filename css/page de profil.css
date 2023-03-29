@@ -298,7 +298,7 @@ justify-content: center;
 }
 #page-blanche
 {  background-color: rgb(80, 80, 80);
-  height: 800px;
+  height: 840px;
   width: 65%;
   position: absolute;
   z-index: 1;
@@ -314,3 +314,4 @@ justify-content: center;
  
 }
 
+label{ text-size-adjust: 20px;}
