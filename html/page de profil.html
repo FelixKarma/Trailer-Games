@@ -20,37 +20,109 @@
 
 
     <header>
-      <nav class="navbar top w-100 bg-black">
+      <nav class="navbar flex-grow-1 bg-black">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="../img/Logo_Trailer-Games.png" alt="" height="180" class="d-inline-block align-text-top">
-          </a>
-
-          <div class="position-absolute top-50 end-0  translate-middle ">
-
-            <button>
-              <a href="http://www.google.fr/"></a>
-              connexion
-            </button>
-            <button>
-              inscription
-            </button> <br><br><br><br><br>
-            <label class="switch position-absolute top-50 end-50 ">
-              <input type="checkbox" checked>
-              <span class="slider round"></span><br>
-              <img src="../img/lune-removebg-preview.png" alt="lune" width="37"
-                class="position-absolute start-0 top-50 translate-middle ">
-              <img src="../img/solei-removebg-preview.png" alt="soleil" width="40"
-                class="position-absolute  start-100 top-50 translate-middle ">
-            </label>
-          </div>
+  </a>
+  
+            <div style="margin-top: 1%;" class="position-absolute top-50 end-0  translate-middle ">
+  
+              <button id="popen">      
+                connexion
+               </button> 
+                <button id="popen1">
+                inscription
+              </button> <br><br>
+            <a href="../html/page de profil.html"><img src="../img/super mario bros 3 ''logo''.png" alt="" height="60px" style="border-radius: 50%; margin-left: 35%; margin-bottom: 35%; " >
+            </div></a>
         </div>
-
+  
         <div class="position-absolute top-50 start-50 translate-middle">
           <h1 style="font-size:100px  ; ; color:  rgb(61, 106, 255) ; ">Trailer-games</h1>
         </div>
-
+        <div id="popup" class="popup">
+          <form class="container">
+              <div class="img">
+                  <img src="../image/Logo Trailer-Games.png" alt="" class="auth">
+              </div>
+              <div class="content">
+                  <label><strong>Email or identifier</strong></label>
+                  <br>
+                  <input type="text" class="textzone" placeholder="Adress@gmail.com or identifier">
+                  <br>
+                  <label><strong>Password</strong></label>
+                  <br>
+                  <input type="Password" class="textzone" placeholder="Password">
+                  <br>
+                  <br>
+                  <div class="MDPO">
+                      <label class="form-check-label" for="exampleCheck2">Mot de passe oublié ?
+                      </label>
+                    </div>
+                    <br>
+                  <div class="checkboxcss">
+                    <input type="checkbox" class="checkbox" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Rester connecté</label>
+                  </div>
+                  <br>
+                  <button class="submit">Connexion</button>
+                  <br>
+              </div>
+              <div class="content">
+                  <button id="pclose" class="pclose">Annuler</button>
+              </div>
+          </form>
+         </div>
+         <!--Popup inscription-->
+         <div id="popup1" class="popup1">
+          <form class="container1">
+              <div class="img">
+                  <img src="../image/Logo Trailer-Games.png" alt="" class="auth">
+              </div>
+              <div class="content">
+                  <label><strong>Email</strong></label>
+                  <br>
+                  <input type="text" class="textzone" placeholder="Adress@gmail.com">
+                  <br>
+                  <label><strong>Password</strong></label>
+                  <br>
+                  <input type="Password" class="textzone" placeholder="Password">
+                  <br>
+                  <label><strong>Confirm Password</strong></label>
+                  <br>
+                  <input type="Password" class="textzone" placeholder="Confirm Password">
+                  <br>
+                  <label><strong>identifier</strong></label>
+                  <br>
+                  <input type="text" class="textzone" placeholder="identifier">
+                  <br>
+                  <label>Veuillez choisir votre date de naissance : <br> <br>
+                    <input type="date" name="party" min="1900-01-01" max="2023-03-31">
+                  </label>
+                  <br>
+                  <br>
+                  <label>
+                  <div class="checkboxcss">
+                    <input type="checkbox" class="checkbox" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1"> j'accepte les conditions générales d'utilisations</label>
+                  </div>
+                  <br>
+                  <button class="submit">S'inscrire</button>
+                  <br>
+              </div>
+              <div class="content">
+                  <button id="pclose1" class="pclose1">Annuler</button>
+              </div>
+    
+    
+    
+            </div>
+          </form>
+         </div>
       </nav>
+      
+      
     </header>
 
 
