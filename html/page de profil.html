@@ -11,8 +11,12 @@
   <link rel="stylesheet" href="../css/header bouton.css">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/page de profil.css">
+<<<<<<< HEAD
   <link rel="stylesheet" href="../css/pagedejeuxhogwardlegacy.css">
   <link rel="stylesheet" href="../css/onglet principale.css">
+=======
+  <link rel="stylesheet" href="../js/easter-eggs.js">
+>>>>>>> 81634144d6f7554e02fe0a0c8b4ad6d06d054feb
 </head>
 
 <body>
@@ -136,7 +140,7 @@
         <div id="page-blanche">
             <div id="corps"  style="margin-right: 35%;">
               <h1 id="profil" style="height: 150%; color: black; justify-content: left;margin-left: 60%;"> Info Profil:</h1>
-             <img src="../img/super mario bros 3 ''logo''.png" height="180" style="border-radius: 50%; margin-left: 39%; position: absolute;" > <br><br><br><br><br><br><br><br>
+             <img id="mario" src="../img/super mario bros 3 ''logo''.png" height="180" style="border-radius: 50%; margin-left: 39%; position: absolute;" > <br><br><br><br><br><br><br><br>
              <h2 style="color: black; margin-left: 4%;"></h2>
              <h3 style="position: absolute;margin-left: 2%; color: black;"></h3> <br><br>
              <h3 style="position: absolute;margin-left: 2%; color: black;"></h3><br><br>
@@ -157,6 +161,7 @@
              placeholder="jj/mm/aaaa"> <br /><br>
          </select>
          
+         
 
          
     
@@ -167,30 +172,41 @@
       
 
  
-        <aside style=" border: 10px solid #000000; background-color: #605f5f; " class="tab">
-          <centrer> <a href="../html/trailer game page d'accueil.html"><button class="tablinks" >
-              <h2>accueil</h2>
-            </button></a>
-            <a href="../html/speedrun.html"><button class="tablinks" >
-              <h2>Speedrun</h2>
-            </button></a>
-            <a href="../html/Jeuàvenirstarwars.html"><button class="tablinks" >
-              <h2>jeux a venir</h2>
-            </button></a>
-            <a href="../html/404.html"><button class="tablinks" >
-              <h2>
-                <p>actus du jeux-vidéo</p>
-              </h2>
-            </button></a>
-            <a href="../html/Easter-EggtheWitcher.html"><button class="tablinks" >
-              <h2>easter-eggs
-              </h2>
-            </button></a>
-          </centrer>
-    
-    
-    
-        </aside>
+      <aside style="text-align: center;" class="tab"><br><br><br><br><br>
+        <div class="dropdown"></div>
+        <button class="tablinks" type="button" onclick="openCity(event, 'acueille')">
+          <h2>accueil</h2>
+        </button> <br><br><br><br>
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <h2 style="text-align: center;">Bande-Annonce</h2>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">hogwart legacy</a></li>
+          <li><a class="dropdown-item" href="#">witcher 3</a></li>
+          <li><a class="dropdown-item" href="#">Sons Of The Forest</a></li>
+        </ul>
+        </button><br><br><br>
+        <button  class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <h2 style="text-align: center;">Jeux a venir</h2>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../html/JeuàvenirRE4remake.html">Resident evil 4 remake</a></li>
+            <li><a class="dropdown-item" href="#">Spider-man 2</a></li>
+            <li><a class="dropdown-item" href="#">Jedi Survivor</a></li>
+        </button>
+        
+          </button><br><br><br>
+        <button class="tablinks" type="button" onclick="openCity(event, 'actus du jeux-vidéo')">
+          <h2>
+            <p>actus du jeux-vidéo</p>
+          </h2>
+        </button><br><br><br>
+        <button class="tablinks" type="button" onclick="openCity(event, 'easter-eggs')">
+          <h2>easter-eggs</h2>
+        </button><br><br>
+
+      </div>
+      
+      </aside>
 
       
     </main>
